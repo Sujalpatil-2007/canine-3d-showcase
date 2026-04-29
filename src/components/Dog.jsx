@@ -152,6 +152,7 @@ const Dog = () => {
   }
 
   dogMaterial.onBeforeCompile = onBeforeCompile;
+  branchsMaterial.onBeforeCompile = onBeforeCompile;
 
   model.scene.traverse((child) => {
     if (child.name.includes("DOG")) {
@@ -162,6 +163,7 @@ const Dog = () => {
   });
 
   const dogModel = useRef(model);
+  // const branches_diffuse = useRef(model);
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -218,7 +220,7 @@ const Dog = () => {
 
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.4,
+          duration:1,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
@@ -231,7 +233,7 @@ const Dog = () => {
         material.current.uMatcap1.value = mat8;
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.4,
+          duration: 1,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
@@ -244,7 +246,7 @@ const Dog = () => {
         material.current.uMatcap1.value = mat9;
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.4,
+          duration: 1,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
@@ -257,7 +259,7 @@ const Dog = () => {
         material.current.uMatcap1.value = mat12;
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.4,
+          duration: 1,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
@@ -270,7 +272,7 @@ const Dog = () => {
         material.current.uMatcap1.value = mat10;
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.4,
+          duration: 1,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
@@ -283,7 +285,7 @@ const Dog = () => {
         material.current.uMatcap1.value = mat8;
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.4,
+          duration: 1,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
@@ -296,7 +298,7 @@ const Dog = () => {
         material.current.uMatcap1.value = mat13;
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.4,
+          duration: 1,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
@@ -307,7 +309,7 @@ const Dog = () => {
       material.current.uMatcap1.value = mat2;
       gsap.to(material.current.uProgress, {
         value: 0.0,
-        duration: 0.4,
+        duration: 1,
         onComplete: () => {
           material.current.uMatcap2.value = material.current.uMatcap1.value;
           material.current.uProgress.value = 1.0;
@@ -315,10 +317,6 @@ const Dog = () => {
       });
     });
   });
-// onMouseMove={(e)=>{
-//             console.log(e.movementX,e.movementY);
-//           }}>
-  
 
   return (
     <>
