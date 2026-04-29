@@ -152,7 +152,7 @@ const Dog = () => {
   }
 
   dogMaterial.onBeforeCompile = onBeforeCompile;
-  branchsMaterial.onBeforeCompile = onBeforeCompile;
+  
 
   model.scene.traverse((child) => {
     if (child.name.includes("DOG")) {
@@ -163,7 +163,7 @@ const Dog = () => {
   });
 
   const dogModel = useRef(model);
-  // const branches_diffuse = useRef(model);
+  
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -218,6 +218,10 @@ const Dog = () => {
       .addEventListener("mouseenter", () => {
         material.current.uMatcap1.value = mat19;
 
+        branchsMaterial.map = null;            
+        branchsMaterial.matcap = mat19;
+        branchsMaterial.needsUpdate = true; 
+
         gsap.to(material.current.uProgress, {
           value: 0.0,
           duration:1,
@@ -231,6 +235,9 @@ const Dog = () => {
       .querySelector(`.title[img-title="navy"]`)
       .addEventListener("mouseenter", () => {
         material.current.uMatcap1.value = mat8;
+        branchsMaterial.map = null;            
+        branchsMaterial.matcap = mat8;
+        branchsMaterial.needsUpdate = true; 
         gsap.to(material.current.uProgress, {
           value: 0.0,
           duration: 1,
@@ -244,6 +251,9 @@ const Dog = () => {
       .querySelector(`.title[img-title="msi"]`)
       .addEventListener("mouseenter", () => {
         material.current.uMatcap1.value = mat9;
+        branchsMaterial.map = null;            
+        branchsMaterial.matcap = mat9;
+        branchsMaterial.needsUpdate = true; 
         gsap.to(material.current.uProgress, {
           value: 0.0,
           duration: 1,
@@ -257,6 +267,9 @@ const Dog = () => {
       .querySelector(`.title[img-title="thisPhone"]`)
       .addEventListener("mouseenter", () => {
         material.current.uMatcap1.value = mat12;
+        branchsMaterial.map = null;            
+        branchsMaterial.matcap = mat12;
+        branchsMaterial.needsUpdate = true; 
         gsap.to(material.current.uProgress, {
           value: 0.0,
           duration: 1,
@@ -270,6 +283,9 @@ const Dog = () => {
       .querySelector(`.title[img-title="kikk"]`)
       .addEventListener("mouseenter", () => {
         material.current.uMatcap1.value = mat10;
+        branchsMaterial.map = null;            
+        branchsMaterial.matcap = mat10;
+        branchsMaterial.needsUpdate = true; 
         gsap.to(material.current.uProgress, {
           value: 0.0,
           duration: 1,
@@ -283,6 +299,9 @@ const Dog = () => {
       .querySelector(`.title[img-title="theCenter"]`)
       .addEventListener("mouseenter", () => {
         material.current.uMatcap1.value = mat8;
+        branchsMaterial.map = null;            
+        branchsMaterial.matcap = mat8;
+        branchsMaterial.needsUpdate = true; 
         gsap.to(material.current.uProgress, {
           value: 0.0,
           duration: 1,
@@ -296,6 +315,9 @@ const Dog = () => {
       .querySelector(`.title[img-title="royal"]`)
       .addEventListener("mouseenter", () => {
         material.current.uMatcap1.value = mat13;
+        branchsMaterial.map = null;            
+        branchsMaterial.matcap = mat13;
+        branchsMaterial.needsUpdate = true; 
         gsap.to(material.current.uProgress, {
           value: 0.0,
           duration: 1,
@@ -307,6 +329,9 @@ const Dog = () => {
       });
     document.querySelector(`.titles`).addEventListener("mouseleave", () => {
       material.current.uMatcap1.value = mat2;
+      branchsMaterial.map = branchMap;            
+        branchsMaterial.matcap = null;
+        branchsMaterial.needsUpdate = true; 
       gsap.to(material.current.uProgress, {
         value: 0.0,
         duration: 1,

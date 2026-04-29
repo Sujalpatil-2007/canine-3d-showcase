@@ -178,8 +178,8 @@ main:has(#section-2 .title:hover) #canvas-elem::after {
 
 .images {
   position: fixed;
-  height: 100%;
-  width: 100%;
+  height: 110%;
+  width: 110%;
   top: 0;
   left: 0;
 
@@ -212,8 +212,8 @@ main:has(#section-2 .title[img-title='thisPhone']:hover) #thisPhone{
   background: rgba(169, 25, 92, 0.219);
 }
 main:has(#section-2 .title[img-title='kikk']:hover) #kikk{
-  opacity: 1;
-  background: rgba(25, 46, 165, 0.32);
+  opacity: 0.5;
+  background: rgba(25, 46, 165, 0.217);
 }
 main:has(#section-2 .title[img-title='theCenter']:hover) #theCenter{
   opacity: 1;
