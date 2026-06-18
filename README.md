@@ -1,21 +1,21 @@
-# 🚗 3D Dog Experience
+🐕 3D Dog Experience
 
-An immersive and interactive 3D web experience built using React, Vite, and Three.js. This project showcases a high-quality 3D dog model with smooth animations, dynamic lighting, and a modern user interface.
+An interactive 3D web application built with React, Vite, and Three.js that showcases a detailed dog model in a real-time 3D environment. Users can explore the model from different angles while experiencing smooth rendering, realistic lighting, and responsive performance.
 
-## 🌐 Live Demo
+🌐 Live Demo
 
-[Add your Render deployment link here]
+https://threed-dog.onrender.com/
 
-## ✨ Features
+✨ Features
 
-* Interactive 3D dog model
-* Smooth camera movements and animations
-* Realistic lighting and shadows
-* Responsive design for desktop and mobile
-* Optimized rendering with Three.js
-* Modern React-based architecture
+* Real-time 3D dog visualization
+* Interactive camera controls
+* Smooth animations and rendering
+* Responsive design
+* Built with modern React architecture
+* Optimized using Vite
 
-## 🛠️ Tech Stack
+ 🛠️ Technologies Used
 
 * React
 * Vite
@@ -24,72 +24,22 @@ An immersive and interactive 3D web experience built using React, Vite, and Thre
 * HTML5
 * CSS3
 
-## 📂 Project Structure
+🚀 Getting Started
 
-text
-src/
-├── components/
-├── assets/
-├── App.jsx
-├── main.jsx
-
-public/
-├── models/
-├── textures/
-
-package.json
-vite.config.js
-
-
-## 🚀 Installation
-
-Clone the repository:
-
-
-git clone <repository-url>
-
-
-Navigate to the project folder:
-
-
-cd 3D_Model
-
-
-Install dependencies:
-
+bash
 npm install
-
-
-Start the development server:
-
-
 npm run dev
 
+📦 Production Build
 
-## 📦 Build for Production
-
+bash
 npm run build
 
-Preview the production build:
 
-
-npm run preview
-
-
-## 🎯 Learning Outcomes
-
-This project helped strengthen skills in:
-
-* 3D web development
-* Three.js fundamentals
-* React component architecture
-* Performance optimization
-* Modern frontend workflows with Vite
-* Git and GitHub project management
-
-## 👨‍💻 Author
+👨‍💻 Author
 
 Sujal Patil
 
-* GitHub: https://github.com/Sujalpatil-2007
-* LinkedIn: https://www.linkedin.com/in/sujal-patil-600014416
+GitHub: https://github.com/Sujalpatil-2007
+
+LinkedIn: https://www.linkedin.com/in/sujal-patil-600014416
